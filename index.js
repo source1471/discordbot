@@ -1,7 +1,7 @@
 const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client();
-const token = 'fk off finn';
+const token = 'no';
 
 bot.registry.registerGroup('simple','Simple');
 bot.registry.registerGroup('music','Music');
