@@ -15,8 +15,8 @@ function Play(connection, message)
         {
         connection.disconnect();
         }
-    
-    
+
+
     });
 }
 
@@ -27,10 +27,10 @@ class JoinChannelCommand extends Commando.Command
     {
         super(client,
         {
-            name: 'join',
+            name: 'play',
             group: 'music',
-            memberName: 'join',
-            description: 'Joins the voice channel of the commander'
+            memberName: 'play',
+            description: 'Joins the voice channel and starts playing music'
         });
     }
     async run(message, args)
@@ -60,7 +60,7 @@ class JoinChannelCommand extends Commando.Command
             {
            message.reply("You must be in a voice channel to call the bot!");
             }
-    
+
     }
 }
 module.exports = JoinChannelCommand;
